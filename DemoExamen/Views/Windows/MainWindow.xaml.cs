@@ -23,7 +23,17 @@ namespace DemoExamen.Views.Windows
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainVM();
+            DataContext = new MainVM(this);
+
+            this.Closed += (o, e) =>
+            {
+                Application.Current.Shutdown();
+            };
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GC.Collect();
         }
     }
 }

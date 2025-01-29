@@ -23,7 +23,7 @@ namespace DemoExamen.Views
         public AuthorizationView()
         {
             InitializeComponent();
-            DataContext = new AuthorizationVM(passwordBox);
+            DataContext = new AuthorizationVM(passwordBox, this);
         }
     }
 }

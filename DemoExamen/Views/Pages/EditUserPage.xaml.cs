@@ -1,4 +1,5 @@
 ﻿using DemoExamen.Models;
+using DemoExamen.VMs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace DemoExamen.Views.Pages
         public EditUserPage(User user)
         {
             InitializeComponent();
+            DataContext = new EditUserVM(user);
         }
     }
 }

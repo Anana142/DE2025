@@ -9,16 +9,18 @@ namespace DemoExamen.Tools
 {
     internal class Navigation
     {
-        public static EventHandler? EventHandler;
+        public static EventHandler<Page> CurrentPageChanged;
         private static Page currentPage;
 
         public static Page CurrentPage
         {
             get => currentPage; set
             {
-                EventHandler?.Invoke(CurrentPage, null);
                 currentPage = value;
+                CurrentPageChanged?.Invoke(null, CurrentPage);
             }
         }
+
+        public static void SetPage(Page page) => CurrentPage = page;
     }
 }

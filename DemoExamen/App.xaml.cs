@@ -9,6 +9,10 @@ namespace DemoExamen
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            //Application.Current.ShutdownMode = ShutdownMode.OnLastWindowClose;
+        }
     }
 
 }

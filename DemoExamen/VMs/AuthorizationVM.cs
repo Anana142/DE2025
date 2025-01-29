@@ -2,6 +2,7 @@
 using DemoExamen.Insfrastructures.DatabaseFolder;
 using DemoExamen.Insfrastructures.StaticStorage;
 using DemoExamen.Models;
+using DemoExamen.Views.Windows;
 using DemoExamen.VMs.Base;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,6 +19,7 @@ namespace DemoExamen.VMs
     internal class AuthorizationVM : BaseVM
     {
         private readonly PasswordBox passwordBox;
+        private Window window;
 
         public string Login { get; set; }
 
@@ -26,19 +28,20 @@ namespace DemoExamen.VMs
         Dictionary<string, int> BlockList = new Dictionary<string, int>();
 
 
-        public AuthorizationVM(PasswordBox passwordBox)
+        public AuthorizationVM(PasswordBox passwordBox, Window window)
         {
+            this.window = window;
             this.passwordBox = passwordBox;
 
             Database.Instance.Users
                                     .Where(s => s.LastAuthorization <= DateOnly.FromDateTime(DateTime.Now).AddMonths(-1))
-                                    .ExecuteUpdateAsync(s => s.SetProperty(
+                                    .ExecuteUpdate(s => s.SetProperty(
                                         p => p.IsLocked, true
                                         ));
 
-            Enter = new BaseCommand(async () =>
+            Enter = new BaseCommand( () =>
             {
-                User? user = await Database.Instance.Users.FirstOrDefaultAsync(s => s.Login == Login && s.Password == passwordBox.Password);
+                User? user =  Database.Instance.Users.FirstOrDefault(s => s.Login == Login && s.Password == passwordBox.Password);
 
                 if (user == null)
                 {
@@ -49,19 +52,19 @@ namespace DemoExamen.VMs
                     {
                         if (count >= 3)
                         {
-                            await Database.Instance.Users
-                                                        .Where(s => s.Login == Login)
-                                                        .ExecuteUpdateAsync(s => s.SetProperty(
-                                                            p => p.IsLocked, true
-                                                            ));
+                            Database.Instance.Users
+                                                    .Where(s => s.Login == Login)
+                                                    .ExecuteUpdate(s => s.SetProperty(
+                                                        p => p.IsLocked, true
+                                                        ));
                             MessageBox.Show("Вы заблокированы. Обратитесь к администратору");
                         }
 
-                        BlockList[Login] = count++;
+                        BlockList[Login] = ++count;
                     }
-
                     else
                         BlockList.Add(Login, 1);
+
                     return;
 
                 }
@@ -73,17 +76,25 @@ namespace DemoExamen.VMs
 
                 MessageBox.Show("\"Вы успешно авторизовались\".");
 
-                await Database.Instance.Users
+                UserStaticStorage.UserId = user.Id;
+
+                Database.Instance.Users
                     .Where(s => s.Id == UserStaticStorage.UserId)
-                    .ExecuteUpdateAsync(s =>
+                    .ExecuteUpdate(s =>
                     s.SetProperty(u =>
                         u.LastAuthorization,
                         DateOnly.FromDateTime(DateTime.Now)
                         ));
 
-                UserStaticStorage.UserId = user.Id;
+                Window newWindow = new Window();
+                if (user.LastAuthorization == null)
+                    newWindow = new ResetPasswordView();
+                else
+                    newWindow = new MainWindow();
 
+                newWindow.Show();
 
+                this.window.Close();
 
             }, () => !string.IsNullOrWhiteSpace(Login) && !string.IsNullOrWhiteSpace(passwordBox.Password));
 

@@ -8,5 +8,6 @@
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Frame Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden"/>
+        <!--<Button Content="shit" Click="Button_Click"/>-->
     </Grid>
 </Window>

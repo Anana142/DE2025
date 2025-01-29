@@ -23,7 +23,7 @@ namespace DemoExamen.Views.Windows
         public ResetPasswordView()
         {
             InitializeComponent();
-            DataContext = new ResetPasswordVM(ConfirmPasssword, NewPassword, CurrentPassword);
+            DataContext = new ResetPasswordVM(ConfirmPasssword, NewPassword, CurrentPassword, this);
         }
     }
 }

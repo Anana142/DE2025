@@ -12,9 +12,31 @@
     <Page.Resources>
         <tools:BooleanToStringConverter x:Key="BoleanToStringConverter"/>
     </Page.Resources>
-
+    
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Menu>
+            <MenuItem Header="Пользователи">
+                <MenuItem Header="Добавить нового" Command="{Binding CreateUser}"/>
+                <MenuItem Header="Изменить выбранного" Command="{Binding EditUser}"/>
+                <MenuItem Header="Снять блокировку" Command="{Binding UnblockedUser}"/>
+                <MenuItem Header="Заблокировать" IsEnabled="False"/>
+            </MenuItem>
+        </Menu>
+        
         <DataGrid ItemsSource="{Binding ListUsers}"  SelectedItem="{Binding SelectedUser}" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить нового" Command="{Binding CreateUser}"/>
+                    <MenuItem Header="Изменить" Command="{Binding EditUser}"/>
+                    <MenuItem Header="Снять блокировку" Command="{Binding UnblockedUser}"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}"/>
@@ -25,13 +47,6 @@
                 <DataGridTextColumn Header="Последняя авторизация" Binding="{Binding LastAuthorization, StringFormat=dd.MM.yyyy}"/>
                 <DataGridTextColumn Header="Блокировка" Binding="{Binding IsLocked, Converter={StaticResource BoleanToStringConverter}}"/>
             </DataGrid.Columns>
-
-            <DataGrid.ContextMenu>
-                <ContextMenu>
-                    <MenuItem Header="Изменить" Command="{Binding EditUser}"/>
-                    <MenuItem Header="Добавить" Command="{Binding CreateUser}"/>
-                </ContextMenu>
-            </DataGrid.ContextMenu>
         </DataGrid>
     </Grid>
 </Page>

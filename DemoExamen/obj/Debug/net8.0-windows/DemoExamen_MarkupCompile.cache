@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Student\Desktop\2025\DemoExamen\DemoExamen\App.xaml
-41581606203
+5-774146811
 
-33-1741871086
+35-1949661288
 2291362932319
-Views\Pages\AdminPage.xaml;Views\Windows\AuthorizationView.xaml;Views\Windows\MainWindow.xaml;Views\Windows\ResetPasswordView.xaml;
+Views\Pages\AdminPage.xaml;Views\Pages\EditUserPage.xaml;Views\Windows\AuthorizationView.xaml;Views\Windows\MainWindow.xaml;Views\Windows\ResetPasswordView.xaml;
 
 False
 

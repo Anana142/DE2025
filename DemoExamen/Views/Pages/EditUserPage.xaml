@@ -9,6 +9,34 @@
       Title="EditUserPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Left">
+            <Label Content="Фамилия:"/>
+            <TextBox Text="{Binding EditUser.LastName}"/>
+
+            <Label Content="Имя:"/>
+            <TextBox Text="{Binding EditUser.Name}"/>
+
+            <Label Content="Отчество:"/>
+            <TextBox Text="{Binding EditUser.Patronymic}"/>
+
+            <Button Content="Сохранить" Command="{Binding SaveUser}" Margin="0 50 0 0"/>
+            <Button Content="Отменить" Command="{Binding Cancel}"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left">
+            <Label Content="Логин:"/>
+            <TextBox Text="{Binding EditUser.Login}"/>
+
+            <Label Content="Пароль:"/>
+            <TextBox Text="{Binding EditUser.Password}"/>
+
+            <Label Content="Роль:"/>
+            <ComboBox ItemsSource="{Binding Roles}" SelectedItem="{Binding EditUser.IdRoleNavigation}" DisplayMemberPath="Name" Height="36" Margin="8"/>
+        </StackPanel>
     </Grid>
 </Page>
