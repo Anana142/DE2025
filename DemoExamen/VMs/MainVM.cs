@@ -1,4 +1,5 @@
-﻿using DemoExamen.Tools;
+﻿using DemoExamen.Insfrastructures.StaticStorage;
+using DemoExamen.Tools;
 using DemoExamen.Views.Pages;
 using DemoExamen.VMs.Base;
 using System.Windows;
@@ -23,7 +24,11 @@ namespace DemoExamen.VMs
                 _window = null;
             };
 
-            Navigation.SetPage(new AdminPage());
+            if(UserStaticStorage.Role == "Администратор")
+                Navigation.SetPage(new AdminPage());
+            else
+                Navigation.SetPage(new Page());
+
             Navigation.CurrentPageChanged += CurrentPageChanged;
         }
 

@@ -41,7 +41,7 @@ namespace DemoExamen.VMs
 
             Enter = new BaseCommand( () =>
             {
-                User? user =  Database.Instance.Users.FirstOrDefault(s => s.Login == Login && s.Password == passwordBox.Password);
+                User? user =  Database.Instance.Users.Include(u => u.IdRoleNavigation).FirstOrDefault(s => s.Login == Login && s.Password == passwordBox.Password);
 
                 if (user == null)
                 {
@@ -60,10 +60,10 @@ namespace DemoExamen.VMs
                             MessageBox.Show("Вы заблокированы. Обратитесь к администратору");
                         }
 
-                        BlockList[Login] = ++count;
+                        BlockList[Login!] = ++count;
                     }
                     else
-                        BlockList.Add(Login, 1);
+                        BlockList.Add(Login!, 1);
 
                     return;
 
@@ -77,6 +77,7 @@ namespace DemoExamen.VMs
                 MessageBox.Show("\"Вы успешно авторизовались\".");
 
                 UserStaticStorage.UserId = user.Id;
+                UserStaticStorage.Role = user.IdRoleNavigation.Name ?? "Гость";
 
                 Database.Instance.Users
                     .Where(s => s.Id == UserStaticStorage.UserId)
