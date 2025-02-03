@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Spire.Doc" Version="13.1.4" />
+  </ItemGroup>
+
 </Project>

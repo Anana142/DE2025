@@ -3,6 +3,13 @@ C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\InV
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\InVariativ.runtimeconfig.json
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\InVariativ.dll
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\InVariativ.pdb
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\HarfBuzzSharp.dll
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\Spire.Doc.dll
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\bin\Debug\net8.0-windows\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.csproj.AssemblyReference.cache
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ_MarkupCompile.cache
@@ -14,6 +21,7 @@ C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InV
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.AssemblyInfo.cs
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.csproj.CoreCompileInputs.cache
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.sourcelink.json
+C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.csproj.Up2Date
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.dll
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\refint\InVariativ.dll
 C:\Users\Student\Desktop\2025\DemoExamen\InVariativ\obj\Debug\net8.0-windows\InVariativ.pdb

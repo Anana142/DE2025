@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|solutionrelative:invariativ\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|c:\\users\\student\\desktop\\2025\\demoexamen\\invariativ\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|solutionrelative:invariativ\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|c:\\users\\student\\desktop\\2025\\demoexamen\\invariativ\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|solutionrelative:invariativ\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0530814-334A-4544-9363-5917147CAC57}|DemoExamen\\DemoExamen.csproj|c:\\users\\student\\desktop\\2025\\demoexamen\\demoexamen\\views\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0530814-334A-4544-9363-5917147CAC57}|DemoExamen\\DemoExamen.csproj|solutionrelative:demoexamen\\views\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|c:\\users\\student\\desktop\\2025\\demoexamen\\invariativ\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|solutionrelative:invariativ\\dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{429AE843-3997-4A36-BAAD-3940F85B3662}|InVariativ\\InVariativ.csproj|c:\\users\\student\\desktop\\2025\\demoexamen\\invariativ\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
-              "RelativeDocumentMoniker": "DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
-              "RelativeToolTip": "DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T02:41:32.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "DTO.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\DTO.cs",
               "RelativeDocumentMoniker": "InVariativ\\DTO.cs",
@@ -113,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml",
               "RelativeDocumentMoniker": "InVariativ\\MainWindow.xaml",
@@ -129,11 +116,24 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "InVariativ\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml.cs",
-              "RelativeToolTip": "InVariativ\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAADwvzIAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "InVariativ\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAEIAAAAAAAAAAADgv0wAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T02:14:17.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
+              "RelativeDocumentMoniker": "DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
+              "RelativeToolTip": "DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T02:41:32.033Z",
               "EditorCaption": ""
             }
           ]
