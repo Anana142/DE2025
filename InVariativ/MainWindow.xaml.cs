@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Document = Spire.Doc.Document;
 
 namespace InVariativ
 {
@@ -57,36 +59,51 @@ namespace InVariativ
 
         private void CheckResult(object sender, RoutedEventArgs e)
         {
-            Document doc = new Document();
-            doc.LoadFromFile(System.IO.Path.Combine(Environment.CurrentDirectory, "Test" + ".docx"));
+            var path = System.IO.Path.Combine(Environment.CurrentDirectory, "Test" + ".docx");
+
+            var doc = new Document();
+            doc.LoadFromFile(path);
 
             Dictionary<string, string> replacement = new Dictionary<string, string>();
 
+            var isTrue = true;
+
             if (Regex.IsMatch(Data, @"[-_!?&@#$/\\\.;^:|%^*+()=0-9a-zA-Z]"))
             {
-                //Result = "ФИО содержит запрещенные символы";
-                //replacement.Add( new Dictionary<string, string>() { 
-                
-                //    {"", "" }
-                //}
-                //);
+                Result = "ФИО содержит запрещенные символы";
+                isTrue = false;
             }
-
             else
-            {
                 Result = "ФИО не содержит запрещённых символов";
-            }
-                
+
+            var section = doc.Sections[0];
+            var table = (Spire.Doc.Table)section.Tables[0];
+
+            table.AddRow();
+
+            var row = table.Rows[table.Rows.Count - 1];
+            row.Cells[0].AddParagraph().AppendText($"Проверка ФИО {Data} на запрещённые символы");
+            row.Cells[1].AddParagraph().AppendText("Отсутствие запрещённых символов");
+            var result = isTrue ? "Успешно" : "Неуспешно";
+            row.Cells[2].AddParagraph().AppendText(result);
+
+            doc.SaveToFile(path, FileFormat.Docx);
+
+            doc.Dispose();
 
             Signal(nameof(Result));
         }
         void GenerateTabe()
         {
-            Document  doc = new Document();
+            string path = System.IO.Path.Combine(Environment.CurrentDirectory, "Test" + ".docx");
+            if (System.IO.File.Exists(path))
+                return;
+
+            Document doc = new Document();
             Spire.Doc.Section section = doc.AddSection();
 
             Spire.Doc.Table table = section.AddTable(true);
-            table.ResetCells(4, 3);
+            table.ResetCells(1, 3);
 
             Spire.Doc.TableRow headerRow = table.Rows[0];
             headerRow.IsHeader = true;
@@ -94,10 +111,6 @@ namespace InVariativ
             headerRow.Cells[0].AddParagraph().AppendText("Действие");
             headerRow.Cells[1].AddParagraph().AppendText("Ожидаемый результат");
             headerRow.Cells[2].AddParagraph().AppendText("Результат (Успешно/Не успешно)");
-
-            string path = System.IO.Path.Combine(Environment.CurrentDirectory, "Test" + ".docx");
-            if(System.IO.File.Exists(path))
-                System.IO.File.Delete(path);
 
             doc.SaveToFile(path, FileFormat.Docx);
         }

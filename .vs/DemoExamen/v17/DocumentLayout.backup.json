@@ -95,8 +95,7 @@
               "RelativeToolTip": "InVariativ\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T02:22:57.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T02:22:57.614Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml",
               "RelativeToolTip": "InVariativ\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T02:14:18.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T02:14:18.275Z"
             },
             {
               "$type": "Document",
@@ -116,9 +114,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "InVariativ\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "InVariativ\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAEIAAAAAAAAAAADgv0wAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\MainWindow.xaml.cs",
+              "RelativeToolTip": "InVariativ\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADgv0AAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T02:14:17.969Z",
               "EditorCaption": ""
@@ -133,8 +131,7 @@
               "RelativeToolTip": "DemoExamen\\Views\\Pages\\AdminPage.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAIwBoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T02:41:32.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T02:41:32.033Z"
             }
           ]
         }
