@@ -698,11 +698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\InVariativ.csproj",
+      "projectUniqueName": "C:\\Users\\Student\\Desktop\\DE\\DE2025\\InVariativ\\InVariativ.csproj",
       "projectName": "InVariativ",
-      "projectPath": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\InVariativ.csproj",
+      "projectPath": "C:\\Users\\Student\\Desktop\\DE\\DE2025\\InVariativ\\InVariativ.csproj",
       "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\Desktop\\2025\\DemoExamen\\InVariativ\\obj\\",
+      "outputPath": "C:\\Users\\Student\\Desktop\\DE\\DE2025\\InVariativ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

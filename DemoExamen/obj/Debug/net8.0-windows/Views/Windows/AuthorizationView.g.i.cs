@@ -61,7 +61,7 @@ namespace DemoExamen.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DemoExamen;component/views/windows/authorizationview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DemoExamen;V1.0.0.0;component/views/windows/authorizationview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Windows\AuthorizationView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
